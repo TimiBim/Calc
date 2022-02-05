@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="result" id="resultArea">
+    </div>
+
+    <div class="error" id="error">
+
+    </div>
+
+    <table class="all">
+        <tr>
+            <td class="td" onclick="appendOperationClipOpen(' ( ')">(</td>
+            <td class="td" onclick="appendOperationClipClosed(' ) ')">)</td>
+            <td class="td" onclick="resultDelete()">C</td>
+            <td class="td" onclick="resultDeleteLast()">DEL</td>
+            <td class="td" onclick="appendOperation(' **2')">x²</td>
+        </tr>
+
+        <tr>
+            <td class="td" onclick="appendOperation(7)">7</td>
+            <td class="td" onclick="appendOperation(8)">8</td>
+            <td class="td" onclick="appendOperation(9)">9</td>
+            <td class="td" onclick="appendOperationDivided(' / ')">/</td>
+            <td class="td" onclick="appendOperation(' **3')">x³</td>
+        </tr>
+
+        <tr>
+            <td class="td" onclick="appendOperation(4)">4</td>
+            <td class="td" onclick="appendOperation(5)">5</td>
+            <td class="td" onclick="appendOperation(6)">6</td>
+            <td class="td" onclick="appendOperationMultiply(' * ')">x</td>
+            <td class="td" onclick="appendOperation(' ** ')">xⁿ</td>
+        </tr>
+
+        <tr>
+            <td class="td" onclick="appendOperation(3)">3</td>
+            <td class="td" onclick="appendOperation(2)">2</td>
+            <td class="td" onclick="appendOperation(1)">1</td>
+            <td class="td" onclick="appendOperationPlus(' + ')" id="plus">+</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="td" onclick="appendOperationPoint('.')">,</td>
+            <td class="td" onclick="appendOperation(0)">0</td>
+            <td class="td_result" onclick="result()">=</td>
+            <td class="td" onclick="appendOperationMinus(' - ')">-</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <script>
+        console.log('__dirname');
+
+        console.log('process.env')
+    </script>
+</body>
+</html>

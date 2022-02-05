@@ -1,0 +1,15 @@
+{
+  "name": "taschenrechner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "render.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.8"
+  }
+}
